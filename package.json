@@ -1,0 +1,23 @@
+{
+  "name": "117_ssg",
+  "version": "0.0.1",
+  "description": "Linux and GIT Survival Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hellypatel1/117_SSG.git"
+  },
+  "author": "Helly Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hellypatel1/117_SSG/issues"
+  },
+  "homepage": "https://github.com/hellypatel1/117_SSG#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
