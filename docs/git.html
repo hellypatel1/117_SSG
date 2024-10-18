@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>GIT</h1>
-    <script src="index.js"></script>
-  </body>
+    <title>GIT: A Version Control System</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>GIT: A Version Control System</h1>
+    </header>
+    <div class="container">
+        <main class="content">
+            <section>
+                <h2>Introduction to GIT</h2>
+                <p>Git is a distributed version control system created by Linus Torvalds in 2005, originally designed to handle the development of the Linux kernel. It has since become one of the most popular tools for version control, helping developers track changes in their codebase, collaborate on projects, and maintain a detailed history of changes over time.</p>
+                <p>Git’s distributed nature allows developers to work offline, commit changes locally, and sync with a central repository only when necessary. This design helps avoid issues with centralized systems, such as downtime or reliance on a single server.</p>
+            </section>
+            <section>
+                <h2>How Git Works</h2>
+                <p>Git allows multiple developers to work on the same project simultaneously by providing branching and merging capabilities. Branches enable developers to create separate environments for working on features, bugs, or experiments without interfering with the main project codebase.</p>
+                <p>The main components of Git include:</p>
+                <ul>
+                    <li><strong>Commit</strong>: A snapshot of the project at a specific time. Each commit has a unique identifier and includes a message and metadata like the author and timestamp.</li>
+                    <li><strong>Branches</strong>: Allow developers to work independently on features or fixes and merge them back into the main codebase when ready.</li>
+                    <li><strong>Merging</strong>: The process of integrating changes from one branch into another.</li>
+                    <li><strong>Pull Requests</strong>: A way to propose changes to the code that others can review before merging.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Key Benefits of Git</h2>
+                <ul>
+                    <li><strong>Distributed System</strong>: Each user has a full copy of the repository, so no central server is needed for basic tasks like committing and reviewing history.</li>
+                    <li><strong>Efficient Collaboration</strong>: Git’s branching model makes it easy for many developers to work on a project simultaneously without conflicts.</li>
+                    <li><strong>Version Control</strong>: Git tracks every commit, making it easy to revert to previous versions when necessary.</li>
+                    <li><strong>Flexibility</strong>: Git supports various workflows, from solo projects to large-scale collaborations.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Common Git Commands</h2>
+                <ul>
+                    <li><strong>git init</strong>: Initializes a new Git repository.</li>
+                    <li><strong>git clone [repository]</strong>: Creates a local copy of a remote repository.</li>
+                    <li><strong>git add [file]</strong>: Stages changes for the next commit.</li>
+                    <li><strong>git commit -m "[message]"</strong>: Commits staged changes with a message.</li>
+                    <li><strong>git status</strong>: Shows the status of the working directory.</li>
+                    <li><strong>git push [remote] [branch]</strong>: Sends commits to a remote repository.</li>
+                    <li><strong>git pull</strong>: Fetches and merges changes from a remote repository.</li>
+                    <li><strong>git checkout [branch]</strong>: Switches to another branch.</li>
+                </ul>
+            </section>
+        </main>
+        <aside class="links">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="git.html">GIT</a></li>
+                    <li><a href="linux.html">Linux</a></li>
+                    <li><a href="pre_internet.html">Pre-Internet</a></li>
+                    <li><a href="internet_development.html">Internet Development</a></li>
+                    <li><a href="web_1_0.html">Web 1.0</a></li>
+                    <li><a href="web_2_0.html">Web 2.0</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+</body>
 </html>

@@ -10,28 +10,62 @@
     <header>
         <h1>Web 1.0: The Static Web</h1>
     </header>
-    <main>
-        <section>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="git.html">GIT</a></li>
-            <li><a href="linux.html">Linux</a></li>
-            <li><a href="pre_internet.html">Pre-Internet: Foundations of Networked Computing</a></li>
-            <li><a href="internet_development.html">The Development of the Internet: From ARPANET to TCP/IP</a></li>
-            <li><a href="web_1_0.html">Web 1.0: The Static Web</a></li>
-            <li><a href="web_2_0.html">Web 2.0: The Dynamic and Social Web</a></li>
-        </section>
-        <section>
-            <h2>HTML and HTTP Protocol - Tim Berners-Lee</h2>
-            <p>In 1989, Tim Berners-Lee invented HTML (Hypertext Markup Language) and the HTTP (Hypertext Transfer Protocol)...</p>
-        </section>
-        <section>
-            <h2>JavaScript</h2>
-            <p>JavaScript, developed by Brendan Eich in 1995, introduced interactivity to the otherwise static web...</p>
-        </section>
-        <section>
-            <h2>CSS</h2>
-            <p>Cascading Style Sheets (CSS) allowed developers to control the layout, colors, and fonts of a website independently of the HTML...</p>
-        </section>
-    </main>
+    <div class="container">
+        <main class="content">
+            <section>
+                <p>With the advent of the World Wide Web in the early 1990s, the internet transformed from a specialized tool for academic research into a global platform for information sharing. This era, often referred to as Web 1.0, was characterized by static content where users could access information but had limited opportunities for interaction. Websites were designed primarily as collections of documents, focusing on text and images, with very little dynamic content. The focus was on the dissemination of information rather than user engagement or interactivity.</p>
+            </section>
+
+            <section>
+                <h2>HTML and HTTP Protocol - Tim Berners-Lee</h2>
+                <p>In 1989, Tim Berners-Lee, a British computer scientist at CERN, proposed the idea of a global hypertext system to enable researchers to share information. This led to the invention of HTML (Hypertext Markup Language), a simple but powerful language for formatting documents on the web. HTML allowed documents to be structured with elements like headings, paragraphs, hyperlinks, and images, laying the foundation for how content would be presented online.</p>
+                <p>In conjunction with HTML, Berners-Lee developed the HTTP (Hypertext Transfer Protocol), which established the rules for transmitting HTML documents over the internet. HTTP enabled computers to request and deliver web pages across networks, allowing users to access information through early web browsers. The first website, created by Berners-Lee in 1991, was hosted at CERN and provided an introduction to the World Wide Web. Together, HTML and HTTP formed the technical backbone of the early web, allowing it to evolve into the expansive system we use today.</p>
+            </section>
+
+            <section>
+                <h2>JavaScript: Bringing Interactivity to Web Pages</h2>
+                <p>In 1995, Brendan Eich, working at Netscape Communications, developed JavaScript, a programming language designed to add interactivity to web pages. Before JavaScript, websites were largely static, consisting of fixed HTML content. JavaScript enabled developers to create dynamic, interactive elements such as forms, animations, and real-time content updates without the need to reload the page.</p>
+                <p>One of JavaScript’s key innovations was its ability to run directly in the user’s web browser (client-side), meaning that users could interact with web content without sending data back to the server for processing. This drastically improved user experience by making websites more responsive and interactive. JavaScript became a cornerstone of web development, evolving into one of the most widely-used programming languages in the world.</p>
+            </section>
+
+            <section>
+                <h2>CSS: Separating Content from Presentation</h2>
+                <p>Before the introduction of Cascading Style Sheets (CSS) in 1996, web developers had to use HTML to define both the content and the appearance of web pages, making it difficult to maintain consistent design across a site. CSS, developed by Håkon Wium Lie and Bert Bos, allowed web developers to separate a website’s content (HTML) from its presentation (layout, fonts, colors, and more). This separation enabled more flexible and reusable design elements across multiple web pages.</p>
+                <p>With CSS, developers could create visually appealing websites with consistent styles, making it easier to update the look and feel of a site without having to modify the underlying HTML content. CSS became an essential tool in web development, allowing for more sophisticated designs and contributing to the modern web's aesthetic evolution.</p>
+            </section>
+
+            <section>
+                <h2>Perl and PHP Server Technologies: Dynamic Content Behind the Scenes</h2>
+                <p>In the early days of the web, most content was static, meaning it was pre-written and stored on servers as plain HTML files. However, with the rise of server-side scripting languages like Perl and PHP, websites could become dynamic—able to generate content on the fly based on user input or database queries.</p>
+                <p>Perl, developed in the 1980s and widely used in the early 1990s, became a popular language for writing CGI (Common Gateway Interface) scripts, which allowed websites to process forms and generate custom responses. Perl was particularly suited to tasks like text processing and server-side scripting, making it a go-to tool for early web developers.</p>
+                <p>PHP (Hypertext Preprocessor), created in 1995 by Rasmus Lerdorf, simplified the process of embedding server-side logic directly into HTML documents. PHP quickly gained popularity because it was easy to learn, highly flexible, and well-suited for web development. With PHP, developers could build websites that dynamically generated content based on user input, laying the foundation for more interactive and personalized web applications. This shift towards dynamic content was a precursor to the richer experiences that would later define Web 2.0.</p>
+            </section>
+
+            <section>
+                <h2>Linux - The Open Source Powerhouse Behind the Web</h2>
+                <p>In 1991, Linus Torvalds, a Finnish computer science student, released Linux, an open-source operating system based on UNIX. Linux offered a free, customizable, and highly stable alternative to commercial operating systems, making it particularly well-suited for servers. As the web grew in popularity, Linux became the operating system of choice for many web servers, thanks to its reliability, security, and open-source nature.</p>
+                <p>Linux’s open-source model fostered a global community of developers who contributed to its development, improving its performance and adapting it to a wide range of uses. Today, Linux powers the majority of web servers, as well as a variety of other critical internet infrastructure. Its success is a testament to the power of collaboration in the open-source community, and it remains one of the most widely-used operating systems in the world.</p>
+            </section>
+
+            <section>
+                <h2>Early Search Engines: AltaVista and HotBot</h2>
+                <p>As the World Wide Web expanded rapidly in the mid-1990s, the need for search engines became increasingly apparent. AltaVista, launched in 1995 by Digital Equipment Corporation, was one of the first search engines to provide a comprehensive index of the web. AltaVista’s advanced technology allowed it to index large amounts of web content quickly, and it introduced features like natural language search, which enabled users to search the web in plain English rather than using Boolean operators.</p>
+                <p>HotBot, introduced in 1996 by Wired magazine, was another early search engine that gained popularity for its ability to search through a large number of indexed pages. It also offered advanced search options like Boolean operators, allowing users to refine their queries. While both AltaVista and HotBot were eventually surpassed by Google in the early 2000s, they played an important role in helping users navigate the vast amounts of information available on the growing web.</p>
+            </section>
+        </main>
+        <aside class="links">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="git.html">GIT</a></li>
+                    <li><a href="linux.html">Linux</a></li>
+                    <li><a href="pre_internet.html">Pre-Internet</a></li>
+                    <li><a href="internet_development.html">Internet Development</a></li>
+                    <li><a href="web_1_0.html">Web 1.0</a></li>
+                    <li><a href="web_2_0.html">Web 2.0</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
 </body>
 </html>
