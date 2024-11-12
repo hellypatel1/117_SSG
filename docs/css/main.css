@@ -336,7 +336,7 @@ body {
     margin: 3rem auto;
     max-width: 800px;
     border-radius: 15px;
-    background: linear-gradient(90deg, #6371c7, #8ea7df);
+    background: linear-gradient(90deg, #9980E5, #B587BA); /* Gradient color */
     color: #FFFFFF;
 }
 
@@ -433,7 +433,7 @@ body {
 
 .newsletter-input {
     padding: 0.75rem 1.5rem;
-    background-color: rgba(0, 0, 0, 0.2); /* Darker background for input */
+    background-color: #13124F; /* Darker background for input */
     color: #FFFFFF;
     border: none;
     outline: none;
@@ -464,7 +464,7 @@ body {
 
 .footer-line {
     height: 8px; /* Adjust the thickness as desired */
-    background: linear-gradient(90deg, #6371c7, #8ea7df); /* Gradient color */
+    background: linear-gradient(90deg, #9980E5, #B587BA); /* Gradient color */
     width: 100%;
 }
 
