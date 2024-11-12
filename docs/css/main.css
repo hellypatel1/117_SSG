@@ -1,6 +1,6 @@
 :root {
     /* Colors */
-    --background-color: #010922;
+    --background-color: #C892B8;
     --text-color: #FFFFFF;
     --primary-color: #3836B9;
     --accent-color: #9091DC;
@@ -260,7 +260,6 @@ body {
 .testimonials-section {
     text-align: center;
     padding: 4rem 3rem;
-    background-color: #010922; /* Matches overall page background */
     color: #FFFFFF;
 }
 
@@ -377,7 +376,6 @@ body {
 
 /* Footer */
 .footer-section {
-    background-color: #010922;
     padding: 3rem 2rem;
     color: #FFFFFF;
 }
