@@ -31,6 +31,6 @@ This repository explores the history of the internet, tracing its development fr
    - Python: A Versatile Language for Web Development
    - Git: Transforming Version Control and Collaboration
 
-   ## Replace with your Figma project and a link to your site. 
+   ## Click the link to access the page
    - My Figma Project - [here](https://www.figma.com/design/CZIRWzJhzsKoen7oaNc7FH/Flux---Figma-Build-Tutorial-(Starter)-(Community)-(Copy)-(Copy)?node-id=205-2&node-type=frame&t=AlUALThgKJdnaDNm-0)
-   -GitHub Pages Hosted Project - [here](https://hellypatel1.github.io/117_SSG/)
+   - GitHub Pages Hosted Project - [here](https://hellypatel1.github.io/117_SSG/)
