@@ -417,20 +417,79 @@ body, h1, h2, h3, p, ul, li, a {
   background: #FF4081;
 }
 
-  /* Footer */
-  footer {
+  /* Email Subscription Section */
+  .email-bar {
+    background: linear-gradient(to right, #FFC0CB, #FFB6C1); /* Light pink gradient */
+    padding: 2rem;
     text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove any external margin */
   }
-  footer nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  footer nav ul li a {
-    color: #fff;
-  }
-  
+
+.email-bar h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.email-bar p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email-form input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #FF69B4; /* Pink border matching theme */
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+}
+
+.email-form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #FF69B4; /* Bright pink button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #FF1493; /* Slightly darker pink on hover */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin: 0; /* Remove any external margin */
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: #FF69B4; /* Pink link */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
