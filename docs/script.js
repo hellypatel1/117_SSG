@@ -20,31 +20,46 @@ function updateSlide() {
   });
 }
 
+// Auto-Play Function
+function autoPlay() {
+  currentSlide = (currentSlide + 1) % totalSlides; // Increment and loop back to the start
+  updateSlide();
+}
+
+// Interval for Auto-Play
+let autoPlayInterval = setInterval(autoPlay, 5000); // Change slides every 5 seconds
+
 // Next Button Logic
 nextButton.addEventListener('click', () => {
+  clearInterval(autoPlayInterval); // Reset auto-play timer when manually navigating
   if (currentSlide < totalSlides - 1) {
     currentSlide++;
   } else {
     currentSlide = 0; // Loop back to the first slide
   }
   updateSlide();
+  autoPlayInterval = setInterval(autoPlay, 5000); // Restart auto-play
 });
 
 // Previous Button Logic
 prevButton.addEventListener('click', () => {
+  clearInterval(autoPlayInterval); // Reset auto-play timer when manually navigating
   if (currentSlide > 0) {
     currentSlide--;
   } else {
     currentSlide = totalSlides - 1; // Loop to the last slide
   }
   updateSlide();
+  autoPlayInterval = setInterval(autoPlay, 5000); // Restart auto-play
 });
 
 // Dot Navigation
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
+    clearInterval(autoPlayInterval); // Reset auto-play timer when manually navigating
     currentSlide = index;
     updateSlide();
+    autoPlayInterval = setInterval(autoPlay, 5000); // Restart auto-play
   });
 });
 
