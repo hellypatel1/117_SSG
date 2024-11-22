@@ -1,169 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History of The Internet</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The History of the Internet</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <main>
-         <!-- Header -->
-         <header class="header">
-            <a href="#" class="logo">SSG</a>
-            <nav class="menu">
-                <a href="#" class="menu-item">about</a>
-                <a href="git.html" class="menu-item">GIT</a>
-                <a href="linux.html" class="menu-item">Linux</a>
-                <a href="#" class="menu-item">More</a>
-            </nav>
-        </header>
+    <header id="top-bar">
+        <div class="container">
+          <h1>The History of the Internet</h1>
+          <nav>
+            <ul>
+              <li><a href="git.html">Git</a></li>
+              <li><a href="linux.html">Linux</a></li>
+              <li><a href="pre_internet.html">Pre-Internet Era</a></li>
+              <li><a href="internet_development.html">Internet Development</a></li>
+              <li><a href="web_1_0.html">Web 1.0</a></li>
+              <li><a href="web_2_0.html">Web 2.0</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>      
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>The History of The Internet</h1>
-                <p class="sub-text">Learn about the evolution of the internet and essential tech skills for the modern era.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="pill-link">Start Your Journey</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/internet.png" alt="Hero Graphic">
-            </div>
-        </section>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" style="background-image: url('images/hero-background.jpg');">
+        <div class="hero-container">
+          <h1>Unlock the Past, Embrace the Future</h1>
+          <p>Your journey to understanding the internet's history and mastering essential tech tools starts here.</p>
+          <a href="pre_internet.html" class="cta-button">Begin Your Exploration</a>
+        </div>
+      </section>                      
 
-        <!-- Featured Section -->
-        <section class="featured">
-            <h2>Featured On</h2>
-            <div class="image-container">
-                <img src="images/tcrunch.png" alt="TechCrunch">
-                <img src="images/fcompany.png" alt="FastCompany">
-                <img src="images/mit.png" alt="MIT">
-                <img src="images/forbes.png" alt="Forbes">
-            </div>
-        </section>
+    <!-- Introduction Section -->
+    <section id="introduction" class="section-padding">
+      <div class="container">
+        <h2>Introduction</h2>
+        <p>Welcome to the ultimate guide for students and tech enthusiasts! This website is your resource to understand the internet's history, master essential tools like Git and Linux, and stay ahead in web technologies. Explore our structured guides and gain the expertise you need to thrive in the digital age.</p>
+      </div>
+    </section>
 
-        <!-- Analytics Section -->
-        <section class="analytics-section">
-            <div class="analytics-card">
-                <div class="analytics-image">
-                    <!-- Replace with appropriate image or icon -->
-                    <img src="images/linux.png" alt="Analytics Graphic 1">
-                </div>
-                <div class="analytics-content">
-                    <h2>Linux: The Heart of Modern OS</h2>
-                    <p>Explore how Linux transformed technology, powering devices and the internet while driving global innovation.</p>
-                    <a href="#" class="analytics-button">LEARN ABOUT LINUX</a>
-                </div>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>What You’ll Learn</h2>
+        <div class="features-container">
+          <!-- Feature 1 -->
+          <div class="feature feature-row">
+            <img src="images/git-logo.png" alt="Git Icon" class="feature-image">
+            <div class="feature-text">
+              <h3>Learn Git</h3>
+              <p>Understand the version control system that powers modern development.</p>
+              <a href="git.html">Read More</a>
             </div>
-        
-            <div class="analytics-card">
-                <div class="analytics-content">
-                    <h2>GIT: Control, Track, Collaborate</h2>
-                    <p>Explore how Git revolutionized development, enabling seamless code management, tracking, and collaboration across the globe.</p>
-                    <a href="#" class="analytics-button">LEARN ABOUT GIT</a>
-                </div>
-                <div class="analytics-image">
-                    <!-- Replace with appropriate image or icon -->
-                    <img src="images/GIT.png" alt="Analytics Graphic 2">
-                </div>
+          </div>
+      
+          <!-- Feature 2 -->
+          <div class="feature feature-row reverse">
+            <div class="feature-text">
+              <h3>Master Linux</h3>
+              <p>Discover the OS that drives the backbone of the internet.</p>
+              <a href="linux.html">Read More</a>
             </div>
-        </section>        
+            <img src="images/linux-logo.png" alt="Linux Icon" class="feature-image">
+          </div>
+      
+          <!-- Feature 3 -->
+          <div class="feature feature-row">
+            <img src="images/web-tech.png" alt="Web Icon" class="feature-image">
+            <div class="feature-text">
+              <h3>Web Technologies</h3>
+              <p>Trace the evolution from Web 1.0 to Web 2.0 and beyond.</p>
+              <a href="web_1_0.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+      <div class="container">
+        <h2>What Students Say</h2>
+        <div class="testimonial">
+          <p>"This guide is a lifesaver for anyone diving into tech. The step-by-step Linux tutorials helped me get started with confidence!"</p>
+          <span>- Alex, Computer Science Student</span>
+        </div>
+        <div class="testimonial">
+          <p>"The concise breakdown of Git fundamentals made version control easy to grasp. Highly recommend it to all students."</p>
+          <span>- Maria, Software Engineering Major</span>
+        </div>
+        <div class="testimonial">
+          <p>"I finally understand the differences between Web 1.0 and 2.0 thanks to this site. A must-read for tech newbies!"</p>
+          <span>- Jordan, IT Enthusiast</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <h3 class="section-subtitle">TESTIMONIALS</h3>
-            <h2 class="section-title">Read What Students Have To Say</h2>
-            
-            <div class="testimonials-container">
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="images/oliviia.png" alt="Olivia Cole">
-                    </div>
-                    <h4 class="testimonial-name">OLIVIA COLE</h4>
-                    <p class="testimonial-text">
-                        Incredible insights into the tools that power the internet! This site makes complex topics so easy to understand.
-                    </p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="images/evan.png" alt="Olivia Cole">
-                    </div>
-                    <h4 class="testimonial-name">Evan White</h4>
-                    <p class="testimonial-text">
-                        A must-visit for anyone curious about tech history. Git and Linux have never felt more approachable!
-                    </p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="images/jessica.png" alt="Olivia Cole">
-                    </div>
-                    <h4 class="testimonial-name">Jessica Page</h4>
-                    <p class="testimonial-text">
-                        A concise and fascinating look at the internet’s evolution. Perfect for tech enthusiasts!
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <h3 class="cta-subtitle">ARE YOU READY?</h3>
-            <h2 class="cta-title">Learn Linux & GIT commands</h2>
-            <h3 class="cta-subtitle">Click the button to Learn basic commands</h3>
-            <a href="#" class="cta-button">GET STARTED</a>
-        </section>        
-        
-        <!-- Footer -->
-        <footer class="footer-section">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4 class="footer-title">SSG</h4>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-subtitle">SSG</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-subtitle">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-subtitle">Read More</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Linux</a></li>
-                        <li><a href="#">GIT</a></li>
-                        <li><a href="#">Internet</a></li>
-                        <li><a href="#">Web</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column newsletter-column">
-                    <h4 class="footer-subtitle">Subscribe for Weekly Newsletter</h4>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Email Address" class="newsletter-input">
-                        <button type="submit" class="newsletter-button">SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-        </footer>  
-        <div class="footer-line"></div>      
-    </main>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Student Tech Survival Guide. All Rights Reserved.</p>
+      <p>Designed by Tech Explorers</p>
+      <nav>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
