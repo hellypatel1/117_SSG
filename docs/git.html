@@ -4,54 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIT: A Version Control System</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/subpages.css">
 </head>
 <body>
-    <header>
+    <!-- Header Section -->
+    <header class="subpage-header">
         <h1>GIT: A Version Control System</h1>
+        <p class="tagline">Master the essential tool for version control and collaboration in modern software development.</p>
     </header>
+
+    <!-- Main Content -->
     <div class="container">
+        <!-- Main Article Section -->
         <main class="content">
-            <section>
-                <h2>Introduction to GIT</h2>
-                <p>Git is a distributed version control system created by Linus Torvalds in 2005, originally designed to handle the development of the Linux kernel. It has since become one of the most popular tools for version control, helping developers track changes in their codebase, collaborate on projects, and maintain a detailed history of changes over time.</p>
-                <p>Git’s distributed nature allows developers to work offline, commit changes locally, and sync with a central repository only when necessary. This design helps avoid issues with centralized systems, such as downtime or reliance on a single server.</p>
+            <!-- Introduction -->
+            <section class="intro-section">
+                <h2>Introduction to Git</h2>
+                <p>
+                    Git is a distributed version control system designed to handle everything from small to large projects with speed and efficiency. 
+                    Initially developed by Linus Torvalds for Linux kernel development, Git has since become the go-to tool for managing codebases, fostering collaboration, and enabling developers to work seamlessly across teams.
+                </p>
+                <p>
+                    Unlike centralized version control systems, Git gives every developer their own repository copy, complete with full history. This decentralized approach improves both performance and collaboration.
+                </p>
             </section>
-            <section>
-                <h2>How Git Works</h2>
-                <p>Git allows multiple developers to work on the same project simultaneously by providing branching and merging capabilities. Branches enable developers to create separate environments for working on features, bugs, or experiments without interfering with the main project codebase.</p>
-                <p>The main components of Git include:</p>
+
+            <!-- Benefits of Git -->
+            <section class="benefits">
+                <h2>Benefits of Using Git</h2>
                 <ul>
-                    <li><strong>Commit</strong>: A snapshot of the project at a specific time. Each commit has a unique identifier and includes a message and metadata like the author and timestamp.</li>
-                    <li><strong>Branches</strong>: Allow developers to work independently on features or fixes and merge them back into the main codebase when ready.</li>
-                    <li><strong>Merging</strong>: The process of integrating changes from one branch into another.</li>
-                    <li><strong>Pull Requests</strong>: A way to propose changes to the code that others can review before merging.</li>
+                    <li><strong>Speed:</strong> Local operations are fast because everything is stored locally, reducing the need for frequent server requests.</li>
+                    <li><strong>Collaboration:</strong> Git’s branching and merging capabilities ensure smooth collaboration across teams of any size.</li>
+                    <li><strong>Reliability:</strong> The snapshot-based model ensures integrity and prevents accidental data loss or corruption.</li>
+                    <li><strong>Open Source:</strong> Git is free and open source, maintained by a passionate community of developers.</li>
                 </ul>
             </section>
-            <section>
-                <h2>Key Benefits of Git</h2>
+
+            <!-- Key Points -->
+            <section class="key-points">
+                <h2>Why Use Git?</h2>
+                <div class="points-grid">
+                    <div class="point">
+                        <h3>Collaboration Made Easy</h3>
+                        <p>
+                            Git allows multiple developers to work on the same project simultaneously without overwriting each other's changes. Branching workflows ensure team members can experiment freely without impacting the main codebase.
+                        </p>
+                    </div>
+                    <div class="point">
+                        <h3>Track Changes Over Time</h3>
+                        <p>
+                            Git's robust history tracking enables teams to revert to previous versions, identify who made changes, and understand why they were made. This is essential for debugging and accountability.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Advanced Git Features -->
+            <section class="advanced-features">
+                <h2>Advanced Git Features</h2>
+                <p>
+                    Once you’ve mastered the basics, explore advanced Git features to further enhance your workflow:
+                </p>
                 <ul>
-                    <li><strong>Distributed System</strong>: Each user has a full copy of the repository, so no central server is needed for basic tasks like committing and reviewing history.</li>
-                    <li><strong>Efficient Collaboration</strong>: Git’s branching model makes it easy for many developers to work on a project simultaneously without conflicts.</li>
-                    <li><strong>Version Control</strong>: Git tracks every commit, making it easy to revert to previous versions when necessary.</li>
-                    <li><strong>Flexibility</strong>: Git supports various workflows, from solo projects to large-scale collaborations.</li>
+                    <li><strong>Git Stash:</strong> Save unfinished work temporarily and switch branches without committing.</li>
+                    <li><strong>Git Rebase:</strong> Streamline a series of commits into a single linear history.</li>
+                    <li><strong>Git Hooks:</strong> Automate tasks by running scripts at specific points in your Git workflow.</li>
+                    <li><strong>Git Bisect:</strong> Efficiently find the commit that introduced a bug using binary search.</li>
                 </ul>
             </section>
-            <section>
+
+            <!-- Common Commands -->
+            <section class="commands">
                 <h2>Common Git Commands</h2>
+                <p>
+                    Below are some frequently used Git commands that will get you started:
+                </p>
+                <div class="commands-list">
+                    <div>
+                        <ul>
+                            <li><strong>git init:</strong> Initialize a new Git repository in your project.</li>
+                            <li><strong>git clone:</strong> Create a copy of an existing repository.</li>
+                            <li><strong>git add:</strong> Stage changes to prepare them for commit.</li>
+                            <li><strong>git commit:</strong> Save your changes with a meaningful message.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><strong>git branch:</strong> Create and list branches in your project.</li>
+                            <li><strong>git checkout:</strong> Switch between branches.</li>
+                            <li><strong>git pull:</strong> Fetch and integrate changes from a remote repository.</li>
+                            <li><strong>git push:</strong> Upload your changes to a remote repository.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Best Practices -->
+            <section class="best-practices">
+                <h2>Git Best Practices</h2>
+                <p>
+                    Follow these best practices to make the most of Git in your projects:
+                </p>
+                <ol>
+                    <li>Write meaningful commit messages to improve team communication and debugging.</li>
+                    <li>Use branches to isolate features, bug fixes, and experiments from the main codebase.</li>
+                    <li>Pull updates regularly from remote repositories to avoid merge conflicts.</li>
+                    <li>Review your changes before committing to maintain high code quality.</li>
+                </ol>
+            </section>
+
+            <!-- Free Resources -->
+            <section class="resources">
+                <h2>Free Git Resources</h2>
+                <p>
+                    Enhance your learning with our exclusive resources:
+                </p>
                 <ul>
-                    <li><strong>git init</strong>: Initializes a new Git repository.</li>
-                    <li><strong>git clone [repository]</strong>: Creates a local copy of a remote repository.</li>
-                    <li><strong>git add [file]</strong>: Stages changes for the next commit.</li>
-                    <li><strong>git commit -m "[message]"</strong>: Commits staged changes with a message.</li>
-                    <li><strong>git status</strong>: Shows the status of the working directory.</li>
-                    <li><strong>git push [remote] [branch]</strong>: Sends commits to a remote repository.</li>
-                    <li><strong>git pull</strong>: Fetches and merges changes from a remote repository.</li>
-                    <li><strong>git checkout [branch]</strong>: Switches to another branch.</li>
+                    <li><a href="git-cheatsheet.pdf" target="_blank">Download the Git Cheat Sheet</a> for quick reference.</li>
+                    <li>Watch our <a href="git-tutorial.html">Git Tutorial Videos</a> for a step-by-step guide.</li>
+                    <li>Access our <a href="git-quiz.html">Git Quiz</a> to test your knowledge and skills.</li>
                 </ul>
             </section>
         </main>
-        <aside class="links">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Explore More Topics</h3>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -63,7 +141,22 @@
                     <li><a href="web_2_0.html">Web 2.0</a></li>
                 </ul>
             </nav>
+            <h3>Track Your Progress</h3>
+            <p>
+                Use our <a href="progress-tracker.html">Progress Tracker</a> to follow along and complete your learning journey with Git.
+            </p>
         </aside>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Tech Survival Guide. All Rights Reserved.</p>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
