@@ -35,10 +35,28 @@ body {
 /* Main Content */
 .content {
     flex: 3;
+    background: linear-gradient(to right, #f7f9fc, #ffffff); /* Soft gradient background */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2rem; /* Add padding inside the container */
+    margin-bottom: 2rem; /* Space below content */
+    box-sizing: border-box;
 }
+
+.content h1,
+.content h2,
+.content h3 {
+    color: #002244; /* Dark blue theme color for headings */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; /* Emphasize headings */
+}
+
+/* Intro Section */
 .intro-section {
     margin-bottom: 2rem;
 }
+
+/* Key Points */
 .key-points {
     margin-bottom: 2rem;
 }
