@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Linux: The Open Source OS" %></title>
+    <link rel="stylesheet" href="/css/subpages.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="subpage-header">
+        <h1><%= pageHeader || "Linux: The Open Source OS" %></h1>
+        <p class="tagline"><%= tagline || "Explore the operating system that powers the modern world." %></p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Main Article Section -->
+        <main class="content">
+            <section class="intro-section">
+                <h2>History of Linux</h2>
+                <p>Linux was created by Linus Torvalds in 1991 as an open-source operating system kernel. Torvalds originally developed Linux as a personal project to create a free alternative to the proprietary UNIX system. He wanted to build a flexible and customizable OS that could run on a variety of hardware platforms.</p>
+                <p>The first version of Linux was released under the GNU General Public License (GPL), which encouraged collaboration and modifications by developers worldwide. This sparked the growth of a vibrant open-source community, with developers contributing to the Linux kernel and building various distributions, or "distros," tailored to different needs. Popular distros today include Ubuntu, Fedora, and Debian.</p>
+                <p>Over the years, Linux has evolved significantly, becoming the backbone of many systems, from web servers and supercomputers to smartphones and embedded devices. Today, Linux is one of the most widely used operating systems globally, especially in enterprise environments and cloud computing.</p>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="benefits">
+                <h2>Why Linux?</h2>
+                <ul>
+                    <li><strong>Flexibility</strong>: Linux can be customized to fit specific needs, from lightweight versions for embedded systems to full-scale desktop environments for everyday use.</li>
+                    <li><strong>Security</strong>: The architecture of Linux makes it highly secure, with regular updates and a strong focus on permissions and user roles. The open-source nature of Linux means vulnerabilities can be quickly identified and patched by the community.</li>
+                    <li><strong>Stability</strong>: Linux is known for its reliability and performance, particularly in server environments, where uptime and stability are critical.</li>
+                    <li><strong>Cost-effectiveness</strong>: Since Linux is open-source, it is free to use and distribute, making it a cost-effective option for businesses and individuals.</li>
+                    <li><strong>Community Support</strong>: Linux has an active community that provides extensive documentation, forums, and support resources, making it accessible to both beginners and advanced users.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Explore More Topics</h3>
+            <nav>
+                <ul>
+                    <% navigationLinks.forEach(link => { %>
+                        <li><a href="<%= link.url %>"><%= link.text %></a></li>
+                    <% }); %>
+                </ul>
+            </nav>
+            <div class="progress-tracker">
+                <p>Use our <a href="#">Progress Tracker</a> to follow along and complete your learning journey with Linux.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Tech Survival Guide. All Rights Reserved.</p>
+            <nav>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/contact">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

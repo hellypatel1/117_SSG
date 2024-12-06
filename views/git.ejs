@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT: A Version Control System</title>
-    <link rel="stylesheet" href="css/subpages.css">
+    <title><%= title || "GIT: A Version Control System" %></title>
+    <link rel="stylesheet" href="/css/subpages.css">
 </head>
 <body>
     <!-- Header Section -->
     <header class="subpage-header">
-        <h1>GIT: A Version Control System</h1>
-        <p class="tagline">Master the essential tool for version control and collaboration in modern software development.</p>
+        <h1><%= pageHeader || "GIT: A Version Control System" %></h1>
+        <p class="tagline"><%= tagline || "Master the essential tool for version control and collaboration in modern software development." %></p>
     </header>
 
     <!-- Main Content -->
@@ -132,13 +132,9 @@
             <h3>Explore More Topics</h3>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="git.html">GIT</a></li>
-                    <li><a href="linux.html">Linux</a></li>
-                    <li><a href="pre_internet.html">Pre-Internet</a></li>
-                    <li><a href="internet_development.html">Internet Development</a></li>
-                    <li><a href="web_1_0.html">Web 1.0</a></li>
-                    <li><a href="web_2_0.html">Web 2.0</a></li>
+                    <% navigationLinks.forEach(link => { %>
+                        <li><a href="<%= link.url %>"><%= link.text %></a></li>
+                    <% }); %>
                 </ul>
             </nav>
             <div class="progress-tracker">
@@ -152,8 +148,8 @@
         <div class="footer-content">
             <p>&copy; 2024 Student Tech Survival Guide. All Rights Reserved.</p>
             <nav>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/contact">Contact Us</a>
             </nav>
         </div>
     </footer>

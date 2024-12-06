@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Web 2.0: The Dynamic and Social Web" %></title>
+    <link rel="stylesheet" href="/css/subpages.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="subpage-header">
+        <h1><%= pageHeader || "Web 2.0: The Dynamic and Social Web" %></h1>
+        <p class="tagline"><%= tagline || "Explore the era of dynamic, user-generated content and social connectivity." %></p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main class="content">
+            <section>
+                <p>
+                    The advent of Web 2.0 in the early 2000s marked a significant shift in the way people interacted with the internet. While Web 1.0 focused primarily on static content, Web 2.0 introduced dynamic, user-generated content and interactive web applications. This new era gave rise to social media platforms, blogs, wikis, and online communities, allowing users to create, share, and collaborate in ways previously unimaginable. Web 2.0 transformed the web into a participatory, social space where users were no longer passive consumers but active contributors.
+                </p>
+            </section>
+
+            <section>
+                <h2>Google Search - PageRank Algorithm</h2>
+                <p>
+                    Google’s rise to dominance in the search engine market began with the introduction of its PageRank algorithm, developed by Larry Page and Sergey Brin at Stanford University in the late 1990s. Unlike other search engines at the time, which focused on keyword frequency and meta tags, PageRank evaluated the relevance of web pages based on the number and quality of links pointing to them. This approach treated links as "votes" of confidence, with the idea that important pages are more likely to be linked by other credible pages.
+                </p>
+                <p>
+                    PageRank provided more accurate search results and quickly made Google the most trusted and widely used search engine. As Google’s index grew, it introduced additional features, such as image search, maps, and personalized results. The company’s continual innovation in search technologies laid the foundation for its dominance in the Web 2.0 era, where information retrieval became central to navigating the vast amount of user-generated content on the web.
+                </p>
+            </section>
+
+            <section>
+                <h2>REST API - Roy Fielding</h2>
+                <p>
+                    Roy Fielding’s 2000 dissertation introduced REST (Representational State Transfer), a set of architectural principles for designing networked applications. REST became the foundation for modern web services and APIs, enabling different systems to communicate with each other over the internet. RESTful APIs are lightweight, scalable, and built on standard HTTP methods like GET, POST, PUT, and DELETE, making them easy to implement and understand.
+                </p>
+                <p>
+                    Fielding’s vision was to create a flexible framework that could support the needs of the rapidly evolving web. REST allowed web developers to build APIs that were platform-independent, facilitating the seamless integration of web services across different devices and applications. In the Web 2.0 era, REST became a critical enabler of web-based applications, from social media platforms to cloud services, powering the interconnectedness of the modern web.
+                </p>
+            </section>
+
+            <section>
+                <h2>Node.js - Ryan Dahl</h2>
+                <p>
+                    Before the introduction of Node.js in 2009, JavaScript was primarily a client-side language, meaning it was used for developing front-end, browser-based applications. Node.js, created by Ryan Dahl, changed that by extending JavaScript to the server side. This allowed developers to use JavaScript to write both client-side and server-side code, creating a more unified development process.
+                </p>
+                <p>
+                    Node.js is built on Chrome’s V8 JavaScript engine and is designed for scalability. Its non-blocking, event-driven architecture allows it to handle thousands of concurrent connections with minimal overhead, making it ideal for real-time applications such as chat servers, gaming platforms, and data streaming services. Node.js also facilitated the rise of the MEAN stack (MongoDB, Express.js, Angular, and Node.js), a full-stack JavaScript solution that gained popularity among web developers during the Web 2.0 era.
+                </p>
+            </section>
+
+            <section>
+                <h2>Python - Guido van Rossum</h2>
+                <p>
+                    Python, created by Guido van Rossum in 1991, gained widespread popularity during the Web 2.0 era for its simplicity, readability, and versatility. Its clear syntax made it accessible to new programmers, while its power and flexibility made it a favorite among experienced developers. Python played a significant role in web development with frameworks like Django and Flask, which allowed developers to build robust, scalable web applications quickly and efficiently.
+                </p>
+                <p>
+                    In addition to web development, Python found applications in other fields like data analysis, artificial intelligence, machine learning, and automation. Its extensive libraries and active community made it a go-to language for solving complex problems across a wide range of domains. Python’s versatility, combined with its ease of use, cemented its place as one of the most important programming languages of the Web 2.0 era and beyond.
+                </p>
+            </section>
+
+            <section>
+                <h2>Git - Linus Torvalds</h2>
+                <p>
+                    Linus Torvalds, known for creating the Linux operating system, developed Git in 2005 to manage the development of the Linux kernel. Git is a distributed version control system that allows developers to track changes in their codebase, collaborate on projects, and manage large code repositories efficiently. One of Git’s key features is its distributed nature, meaning that every contributor has a complete copy of the repository, making it more resilient to data loss and easier to manage in a collaborative environment.
+                </p>
+                <p>
+                    Git became the foundation for GitHub, a platform launched in 2008 that provided a centralized location for developers to host, share, and collaborate on code. GitHub’s integration with Git revolutionized open-source development, making it easier for developers around the world to contribute to projects, share ideas, and build software together. Today, Git is the most widely used version control system, essential to modern software development workflows, particularly in the Web 2.0 era of collaborative, open-source development.
+                </p>
+            </section>
+        </main>
+
+       <!-- Sidebar -->
+       <aside class="sidebar">
+        <h3>Explore More Topics</h3>
+        <nav>
+            <ul>
+                <% navigationLinks.forEach(link => { %>
+                    <li><a href="<%= link.url %>"><%= link.text %></a></li>
+                <% }); %>
+            </ul>
+        </nav>
+        <div class="progress-tracker">
+            <p>Use our <a href="#">Progress Tracker</a> to follow along and complete your learning journey.</p>
+        </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Student Tech Survival Guide. All Rights Reserved.</p>
+            <nav>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/contact">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

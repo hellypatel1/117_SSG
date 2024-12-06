@@ -22,48 +22,97 @@ body, h1, h2, h3, p, ul, li, a {
   }
   
   /* Top Bar */
+/* Top-bar styles */
 #top-bar {
-    position: fixed;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3); /* Light translucent background */
-    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
-    color: #002244; /* Dark text for contrast */
-    padding: 1rem 0;
-    z-index: 10; /* Ensures it sits above the hero section */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth */
-  }
-  
-  #top-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  #top-bar h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  #top-bar nav ul {
-    display: flex;
-    gap: 1.5rem;
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.684);
+  backdrop-filter: blur(10px);
+  color: #002244;
+  padding: 1rem 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #002244;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stacked layout for menu */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links.show {
+    display: flex; /* Show menu when toggled */
+    transform: translateY(0); /* Slide in effect */
+    opacity: 1; /* Fade in effect */
+}
+
+/* Link Styles */
+.nav-links li {
+    margin-bottom: 10px;
     list-style: none;
-  }
-  
-  #top-bar nav ul li a {
-    color: #002244; /* Matches the natural tones */
+}
+
+.nav-links a {
     text-decoration: none;
-    font-size: 1rem;
+    color: #002244;
+    font-size: 1.1rem;
     font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  #top-bar nav ul li a:hover {
-    color: #006d77;/* Highlight color on hover */
-  }
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on links */
+.nav-links a:hover {
+    background-color: #006d77; /* Highlight background on hover */
+    color: #ffffff; /* Change text color to white */
+}
 
 /* Hero Section */
 #hero {
@@ -85,69 +134,73 @@ body, h1, h2, h3, p, ul, li, a {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), /* Darker at the top */
+    rgba(0, 0, 0, 0.3) /* Lighter at the bottom */
+  );
 }
 
-  
-  .hero-container {
-    position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
-    top: 50%;
-    transform: translateY(-50%);
+/* Hero Container */
+.hero-container {
+  position: relative;
+  z-index: 2; /* Ensures the text is above the overlay */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hero Section Text */
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FFFFFF; /* White heading */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#hero p {
+  font-size: 1.3rem;
+  color: #FFFFFF; /* White subheading */
+  margin-bottom: 2rem;
+}
+
+/* Transparent Button with White Border */
+.cta-button {
+  display: inline-block;
+  background-color: transparent; /* Transparent background */
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #FFFFFF; /* White border */
+  border-radius: 25px; /* Rounded edges for a modern style */
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFFFFF; /* White background on hover */
+  color: #000000; /* Black text on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Optional Animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  /* Hero Section Text */
-  #hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #FFFFFF; /* White heading */
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  #hero p {
-    font-size: 1.3rem;
-    color: #FFFFFF; /* White subheading */
-    margin-bottom: 2rem;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  /* Transparent Button with White Border */
-  .cta-button {
-    display: inline-block;
-    background-color: transparent; /* Transparent background */
-    color: #FFFFFF; /* White text */
-    padding: 0.8rem 1.5rem;
-    border: 2px solid #FFFFFF; /* White border */
-    border-radius: 25px; /* Rounded edges for a modern style */
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #FFFFFF; /* White background on hover */
-    color: #000000; /* Black text on hover */
-    transform: scale(1.05); /* Subtle zoom effect */
-  }  
-  
-  /* Optional Animation */
-  @keyframes gradient-shift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  #hero {
-    animation: gradient-shift 10s ease infinite;
-  }  
-  
+}
+
+#hero {
+  animation: gradient-shift 10s ease infinite;
+}
+
   
 /* Introduction Section */
 #introduction {

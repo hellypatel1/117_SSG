@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title || 'The History of the Internet' %></title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="top-bar">
+      <div class="container">
+          <h1>The History of the Internet</h1>
+          <nav>
+              <!-- Hamburger Icon -->
+              <div class="hamburger" id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+  
+              <!-- Navigation Links -->
+              <ul class="nav-links" id="nav-links">
+                  <li><a href="/git">Git</a></li>
+                  <li><a href="/linux">Linux</a></li>
+                  <li><a href="/pre-internet">Pre-Internet Era</a></li>
+                  <li><a href="/internet-development">Internet Development</a></li>
+                  <li><a href="/web-1-0">Web 1.0</a></li>
+                  <li><a href="/web-2-0">Web 2.0</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>  
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" style="background-image: url('/images/Untitleddesign.jpg');">
+        <div class="hero-container">
+          <h1><%= heroTitle || 'Unlock the Past, Embrace the Future' %></h1>
+          <p><%= heroSubtitle || 'Your journey to understanding the internet\'s history and mastering essential tech tools starts here.' %></p>
+          <a href="/pre-internet" class="cta-button">Begin Your Exploration</a>
+        </div>
+      </section>                      
+
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to the ultimate guide for students and tech enthusiasts! This website
+          is your resource to understand the internet's history, master essential tools
+          like Git and Linux, and stay ahead in web technologies. Explore our structured
+          guides and gain the expertise you need to thrive in the digital age.
+        </p>
+      </section>
+      
+      <!-- Features Section -->
+      <section id="features">
+        <h2>What You’ll Learn</h2>
+        <div class="features-container">
+          <!-- Row 1: Linux -->
+          <div class="feature">
+            <img src="/images/linux-logo.png" alt="Linux Icon" class="feature-image">
+            <div class="feature-text">
+              <h3>Linux: The Heart of Modern OS</h3>
+              <p>
+                Explore how Linux transformed technology, powering devices and the
+                internet while driving global innovation.
+              </p>
+              <a href="/linux" class="cta-button">Learn About Linux</a>
+            </div>
+          </div>
+      
+          <!-- Row 2: Git -->
+          <div class="feature">
+            <div class="feature-text">
+              <h3>Git: Control, Track, Collaborate</h3>
+              <p>
+                Discover how Git revolutionized development, enabling seamless code
+                management, version control, and collaboration for projects across the globe.
+              </p>
+              <a href="/git" class="cta-button">Learn About Git</a>
+            </div>
+            <img src="/images/git-logo.png" alt="Git Icon" class="feature-image">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <div class="testimonial-row">
+          <!-- Left Side: Heading and Description -->
+          <div class="testimonial-text">
+            <h3>Testimonials</h3>
+            <h2>What Students Say!</h2>
+            <p>
+              Discover what students are saying about our tech survival guide! From mastering Git and Linux to understanding the evolution of the internet, our guide has empowered learners to excel in their tech journeys.
+            </p>
+          </div>
+      
+          <!-- Right Side: Testimonial Slideshow -->
+          <div class="testimonial-slideshow">
+            <div class="testimonial-cards">
+              <% testimonials.forEach(function(testimonial) { %>
+                <div class="testimonial-card">
+                  <img src="/images/<%= testimonial.image %>" alt="Student <%= testimonial.name %>" class="testimonial-image">
+                  <h4><%= testimonial.name %></h4>
+                  <p class="testimonial-role"><%= testimonial.role %></p>
+                  <p class="testimonial-quote">
+                    "<%= testimonial.quote %>"
+                  </p>
+                </div>
+              <% }); %>
+            </div>
+            <div class="slider-controls">
+              <!-- Pagination Dots -->
+              <div class="dots-container">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+              </div>
+  
+              <!-- Navigation Buttons -->
+              <div class="navigation-buttons">
+                <button class="prev-button">&laquo; Previous</button>
+                <button class="next-button">Next &raquo;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Email Subscription Section -->
+      <div class="email-bar">
+        <h3>Stay Updated!</h3>
+        <p>Subscribe to our newsletter for the latest updates and resources.</p>
+        <form class="email-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© 2024 Student Tech Survival Guide. All Rights Reserved.</p>
+          <p>Designed by Tech Explorers</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

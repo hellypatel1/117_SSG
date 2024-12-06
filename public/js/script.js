@@ -65,3 +65,14 @@ dots.forEach((dot, index) => {
 
 // Initialize the slideshow
 updateSlide();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show'); // Toggle menu visibility
+      hamburger.classList.toggle('active'); // Animate hamburger icon
+  });
+});

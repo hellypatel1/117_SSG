@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/hellypatel1/117_SSG#readme",
   "dependencies": {
-    "express": "^4.21.0"
-  }
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "marked": "^15.0.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
 }
