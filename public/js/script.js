@@ -67,12 +67,18 @@ dots.forEach((dot, index) => {
 updateSlide();
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+// Select hamburger and nav-links
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-  hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show'); // Toggle menu visibility
-      hamburger.classList.toggle('active'); // Animate hamburger icon
-  });
+// Add click event listener to toggle menu
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('show');
+});
+
+// Optional: Close the menu when a link is clicked
+navLinks.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('show');
 });

@@ -44,12 +44,13 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 /* Hamburger Menu */
+/* Hamburger Menu */
 .hamburger {
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 11;
+  z-index: 20; /* Higher z-index to stay above other content */
 }
 
 .hamburger span {
@@ -59,6 +60,7 @@ body, h1, h2, h3, p, ul, li, a {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Hamburger active styles */
 .hamburger.active span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -73,45 +75,50 @@ body, h1, h2, h3, p, ul, li, a {
 
 /* Navigation Links */
 .nav-links {
-    display: none; /* Hidden by default */
-    flex-direction: column; /* Stacked layout for menu */
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fixed for a sliding effect */
+  top: 0;
+  right: -100%; /* Hidden initially */
+  width: 250px; /* Fixed width for the menu */
+  height: 100vh; /* Full viewport height */
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+  padding: 2rem 1rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  z-index: 15; /* Below hamburger but above content */
+  transition: right 0.3s ease; /* Smooth sliding transition */
 }
 
 .nav-links.show {
-    display: flex; /* Show menu when toggled */
-    transform: translateY(0); /* Slide in effect */
-    opacity: 1; /* Fade in effect */
+  right: 0; /* Slides in from the right */
 }
 
 /* Link Styles */
 .nav-links li {
-    margin-bottom: calc(1rem / 1.618);
-    list-style: none;
+  margin-bottom: 1rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #002244;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: calc(0.5rem * 1.618) calc(1rem * 1.618);
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: #002244;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: calc(0.5rem * 1.618) calc(1rem * 1.618);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect on links */
 .nav-links a:hover {
-    background-color: #006d77; /* Highlight background on hover */
-    color: #ffffff; /* Change text color to white */
+  background-color: #006d77;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 70%; /* Make menu smaller on smaller screens */
+  }
 }
 
 /* Hero Section */
