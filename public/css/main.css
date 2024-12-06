@@ -16,9 +16,9 @@ body, h1, h2, h3, p, ul, li, a {
   
   /* Container */
   .container {
-    max-width: 1200px;
+    max-width: 61.8%;
     margin: auto;
-    padding: 0 1rem;
+    padding: calc(1rem * 1.618);
   }
   
   /* Top Bar */
@@ -94,7 +94,7 @@ body, h1, h2, h3, p, ul, li, a {
 
 /* Link Styles */
 .nav-links li {
-    margin-bottom: 10px;
+    margin-bottom: calc(1rem / 1.618);
     list-style: none;
 }
 
@@ -103,7 +103,7 @@ body, h1, h2, h3, p, ul, li, a {
     color: #002244;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: calc(0.5rem * 1.618) calc(1rem * 1.618);
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -120,7 +120,8 @@ body, h1, h2, h3, p, ul, li, a {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100.316vh;
+  padding: calc(1rem * 1.618);
   text-align: center;
   position: relative;
 }
@@ -144,22 +145,23 @@ body, h1, h2, h3, p, ul, li, a {
 .hero-container {
   position: relative;
   z-index: 2; /* Ensures the text is above the overlay */
-  top: 50%;
+  top: 50.158%;
   transform: translateY(-50%);
 }
 
 /* Hero Section Text */
 #hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem; /* Base size */
   font-weight: bold;
-  line-height: 1.2;
+  line-height: calc(3rem * 1.618);
   color: #FFFFFF; /* White heading */
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
 #hero p {
-  font-size: 1.3rem;
+  font-size: calc(3rem / 1.618);
+  line-height: calc((3rem / 1.618) * 1.618);
   color: #FFFFFF; /* White subheading */
   margin-bottom: 2rem;
 }
@@ -205,7 +207,7 @@ body, h1, h2, h3, p, ul, li, a {
 /* Introduction Section */
 #introduction {
     background: linear-gradient(to right, #FFE6F0, #FFFFFF);
-    padding: 2rem 1rem;
+    padding: calc(2rem * 1.618) calc(1rem * 1.618);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -213,14 +215,16 @@ body, h1, h2, h3, p, ul, li, a {
   
   #introduction h2 {
     font-size: 2rem;
+    line-height: calc(2rem * 1.618);
     color: #002244;
     margin-bottom: 1rem;
   }
   
   #introduction p {
-    font-size: 1.2rem;
+    font-size: calc(2rem / 1.618);
+    line-height: calc((2rem / 1.618) * 1.618);
+    margin-bottom: calc(1rem * 1.618);
     color: #5A5A5A; /* Medium gray for paragraph */
-    line-height: 1.6;
   }
   
 /* Feature Section */
@@ -257,7 +261,7 @@ body, h1, h2, h3, p, ul, li, a {
 
 /* Image Styling */
 .feature-image {
-  width: 35%; /* Adjusted to fit better with text */
+  width: 61.8%;
   max-width: 300px; /* Limit maximum image size */
   height: auto;
   border-radius: 10px; /* Rounded corners for modern design */
@@ -266,21 +270,22 @@ body, h1, h2, h3, p, ul, li, a {
 
 /* Text Container Styling */
 .feature-text {
-  width: 50%; /* Slightly larger than the image for emphasis */
+  width: 38.2%;
   text-align: left;
 }
 
 .feature-text h3 {
   font-size: 1.8rem;
+  line-height: calc(1.8rem * 1.618);
   color: #4A148C; /* Dark Purple for headings */
   margin-bottom: 1rem;
 }
 
 /* Paragraph Text */
 .feature-text p {
-  font-size: 1rem;
+  font-size: calc(1.8rem / 1.618);
   color: #333333; /* Dark Gray for paragraphs */
-  line-height: 1.8;
+  line-height: calc((1.8rem / 1.618) * 1.618);
   margin-bottom: 1.5rem;
 }
 
