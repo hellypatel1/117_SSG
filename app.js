@@ -116,8 +116,8 @@ app.get('/pre-internet', (req, res) => {
 
 app.get('/internet-development', (req, res) => {
     res.render('internet_development', {
-        title: 'The Development of the Internet: From ARPANET to TCP/IP',
-        pageHeader: 'The Development of the Internet: From ARPANET to TCP/IP',
+        title: 'The Development of the Internet',
+        pageHeader: 'The Development of the Internet',
         tagline: 'Explore how foundational technologies like ARPANET and TCP/IP revolutionized communication and created the internet.',
         navigationLinks,
     });
