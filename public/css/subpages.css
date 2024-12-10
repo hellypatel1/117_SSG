@@ -20,6 +20,10 @@ h3 {
     font-size: 1rem; /* Smaller proportion */
 }
 
+p {
+    text-align: justify;
+}
+
   /* Top Bar */
 /* Top-bar styles */
 #top-bar {
@@ -151,6 +155,7 @@ h3 {
     line-height: 1.6; /* Improve readability */
     margin: 0; /* Reset unnecessary margins */
     width: 100%; /* Ensure it spans the full width */
+    text-align: center;
 }
 
 
