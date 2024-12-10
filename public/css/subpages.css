@@ -211,7 +211,7 @@ html {
 /* Sidebar Styling */
 .sidebar {
     position: sticky;
-    top: 20px; /* Keeps it below the top edge */
+    top: 90px; /* Keeps it below the top edge */
     padding: 1rem;
     background: #f9f9f9;
     border-radius: 8px;
