@@ -83,6 +83,7 @@ html {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     z-index: 15; /* Below hamburger but above content */
     transition: right 0.3s ease; /* Smooth sliding transition */
+    list-style-type: none;
   }
   
   .nav-links.show {
