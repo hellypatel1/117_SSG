@@ -8,10 +8,15 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="subpage-header">
-        <h1><%= pageHeader || "Pre-Internet: Foundations of Networked Computing" %></h1>
-        <p class="tagline"><%= tagline || "Explore the origins of the internet and the visionaries who shaped its foundation." %></p>
-    </header>
+    <%- include('partials/header') %>
+
+     <!-- Hero Section -->
+     <section class="subpage-header">
+        <div class="container">
+            <h1>Pre-Internet Era</h1>
+            <p class="tagline">Discover the world before the Internet revolutionized our lives.</p>
+        </div>
+    </section>     
 
     <!-- Main Content -->
     <div class="container">
@@ -81,5 +86,6 @@
             </nav>
         </div>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>

@@ -8,10 +8,15 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="subpage-header">
-        <h1><%= pageHeader || "The Development of the Internet: From ARPANET to TCP/IP" %></h1>
-        <p class="tagline"><%= tagline || "Explore how foundational technologies like ARPANET and TCP/IP revolutionized communication and created the internet." %></p>
-    </header>
+    <%- include('partials/header') %>
+
+    <!-- Hero Section -->
+    <section class="subpage-header">
+        <div class="container">
+            <h1><%= pageHeader || "The Development of the Internet: From ARPANET to TCP/IP" %></h1>
+            <p class="tagline"><%= tagline || "Explore how foundational technologies like ARPANET and TCP/IP revolutionized communication and created the internet." %></p>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <div class="container">
@@ -92,5 +97,6 @@
             </nav>
         </div>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>

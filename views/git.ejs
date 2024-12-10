@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="/css/subpages.css">
 </head>
 <body>
+
     <!-- Header Section -->
-    <header class="subpage-header">
-        <h1><%= pageHeader || "GIT: A Version Control System" %></h1>
-        <p class="tagline"><%= tagline || "Master the essential tool for version control and collaboration in modern software development." %></p>
-    </header>
+    <%- include('partials/header') %>
+
+    <!-- Hero Section -->
+    <section class="subpage-header">
+        <div class="container">
+            <h1><%= pageHeader || "GIT: A Version Control System" %></h1>
+            <p class="tagline"><%= tagline || "Master the essential tool for version control and collaboration in modern software development." %></p>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <div class="container">
@@ -153,5 +159,6 @@
             </nav>
         </div>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
