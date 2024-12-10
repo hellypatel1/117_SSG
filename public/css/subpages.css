@@ -4,23 +4,158 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    min-height: 100%; /* Ensure the body stretches fully */
+    background-color: transparent; /* Avoid any unintended background gaps */
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the document stretches fully */
 }
 
-/* Header */
+  /* Top Bar */
+/* Top-bar styles */
+#top-bar {
+    position: fixed;
+    width: 100%;
+    height: 80px; /* Fixed height for consistent spacing */
+    background: rgba(255, 255, 255, 0.684);
+    backdrop-filter: blur(10px);
+    color: #002244;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: none; /* Ensures no default borders are applied */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Hamburger Menu */
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 20; /* Higher z-index to stay above other content */
+  }
+  
+  .hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #002244;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Hamburger active styles */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Fixed for a sliding effect */
+    top: 0;
+    right: -100%; /* Hidden initially */
+    width: 250px; /* Fixed width for the menu */
+    height: 100vh; /* Full viewport height */
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+    padding: 2rem 1rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 15; /* Below hamburger but above content */
+    transition: right 0.3s ease; /* Smooth sliding transition */
+  }
+  
+  .nav-links.show {
+    right: 0; /* Slides in from the right */
+  }
+  
+  /* Link Styles */
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #002244;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: calc(0.5rem * 1.618) calc(1rem * 1.618);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect on links */
+  .nav-links a:hover {
+    background-color: #006d77;
+    color: #ffffff;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-links {
+      width: 70%; /* Make menu smaller on smaller screens */
+    }
+  }
+
+/* Hero Section */
 .subpage-header {
-    text-align: center;
-    padding: 2rem;
-    background: linear-gradient(to right, #e66465, #9198e5);
-    color: #fff;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center the text */
+    padding: 6rem 2rem; /* Add sufficient padding for spacing */
+    background: linear-gradient(to right, #e66465, #9198e5); /* Gradient background */
+    color: #fff; /* White text for visibility */
+    margin-top: 80px; /* Ensure no overlap with the top bar */
 }
+
 .subpage-header h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* Large, bold title */
+    font-weight: bold; /* Emphasize title */
+    margin: 0 0 1rem 0; /* Ensure proper spacing below the title */
+    width: 100%; /* Ensure it spans the full width */
 }
+
 .subpage-header .tagline {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 1.5rem; /* Slightly smaller tagline */
+    font-weight: 400; /* Normal weight for secondary importance */
+    line-height: 1.6; /* Improve readability */
+    margin: 0; /* Reset unnecessary margins */
+    width: 100%; /* Ensure it spans the full width */
 }
+
+
+
+@media (max-width: 768px) {
+    #top-bar {
+        height: 60px; /* Smaller height for mobile */
+    }
+    .subpage-header {
+        margin-top: 60px; /* Match the new height */
+    }
+}
+
 
 /* Container */
 .container {
